@@ -1,12 +1,117 @@
+/* CSS reset */
+
 html {
-    background-color: gray;
+    background-color: white;
 }
 
-h1, h2, h3 {
-    color: pink;
+body, p, h1, h2, h3, h4, h5, h6, nav {
+    padding: 0;
+    margin: 0;
+    
+}
+/* box model solution here */
+* {
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
 
+/* Style Rules */
+
+/* Navigation */
+nav {background-color: rgb(255, 215, 184);}
+nav ul.nav li {
+    float: left;
+    list-style-type: none;
+}
+nav ul.nav li a {
+    display: block;
+    padding: 10px 20px;
+    color: #5B6888;
+    text-decoration: none;
+    border-left: solid 2px #5B6888;
+}
+#blog {
+    border-right: solid 2px #5B6888;
+}
+ul.nav li.active a {
+    background-color: rgb(209, 230, 250);
+}
+ul.nav li a:hover{
+    background-color: rgb(209, 230, 250);
+}
+.stopcollapse {
+    clear: both;
+}
+/*End Nav Styling*/
+main {
+    padding: .5rem 2%;
+}
+h1, h3 {
+    color: #5B6888;
+    font-family: 'Economica', sans-serif;
+    font-style: normal;
+    padding: 5px;
+
+}
+#mainblog {
+    text-align: center;
+}
+h2 {
+    color: #A5B6D1;
+    font-family: 'Economica', sans-serif;
+    padding: 10px;
 }
 p {
-    color: black;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1rem;
+    padding-left: 10px;
+    line-height: 30px;
+
 }
+a:link {color: #FFD788;}
+a:visited {color:rgb(128,86,54)}
+a:hover {color:#D1E6FA;}
+/* Blog specific rules */
+h2#theory {
+    color: #5B6888;
+}
+
+ul.overview {
+    list-style-type: circle;
+    font-family: 'Dosis', sans-serif;
+text-align: left;
+padding-left: 470px;
+}
+ol.structure {
+    list-style-type: upper-roman;
+    font-family: 'Dosis', sans-serif;
+
+}
+ul.overview:hover {color: rgb(209,230,250);}
+.theorydef, .quote {
+    border: solid 4px #D1E6FA;
+border-radius: 11px;
+padding: 10px;
+margin: 10px;
+font-family: 'Dosis', sans-serif;
+line-height: 30px;
+font-size: 17px;
+
+}
+main dl dt {
+    font-weight: 600;
+    padding: 0 0 0 1rem;
+}
+main dl dd {
+    padding: 0 0 .75rem 1rem;
+}
+
+footer {
+    
+    border: solid 1px #D1E6FA;
+    border-radius: 11px;
+    background-color: #A5B6D1;
+    text-align: center;
+
+}
+
 
