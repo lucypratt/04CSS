@@ -1,3 +1,13 @@
+/*Color Variables */
+:root {
+    --blue: #5B6888;
+    --tan: rgb(255, 215, 184);
+    --light-blue: rgb(209, 230, 250);
+    --light-blue2: #A5B6D1;
+    --brown: rgb(128,86,54);
+    
+  }
+
 /* CSS reset */
 
 html {
@@ -17,26 +27,25 @@ body, p, h1, h2, h3, h4, h5, h6, nav {
 /* Style Rules */
 
 /* Navigation */
-nav {background-color: rgb(255, 215, 184);}
+nav {background-color: var(--tan);}
 nav ul.nav li {
     float: left;
     list-style-type: none;
+    font-family: 'Dosis', sans-serif;
 }
 nav ul.nav li a {
     display: block;
     padding: 10px 20px;
-    color: #5B6888;
+    color: var(--blue);
     text-decoration: none;
     border-left: solid 2px #5B6888;
 }
-#blog {
-    border-right: solid 2px #5B6888;
-}
+
 ul.nav li.active a {
-    background-color: rgb(209, 230, 250);
+    background-color: var(--light-blue);
 }
 ul.nav li a:hover{
-    background-color: rgb(209, 230, 250);
+    background-color: var(--light-blue);
 }
 .stopcollapse {
     clear: both;
@@ -46,7 +55,7 @@ main {
     padding: .5rem 2%;
 }
 h1, h3 {
-    color: #5B6888;
+    color: var(--blue);
     font-family: 'Economica', sans-serif;
     font-style: normal;
     padding: 5px;
@@ -56,7 +65,7 @@ h1, h3 {
     text-align: center;
 }
 h2 {
-    color: #A5B6D1;
+    color: var(--light-blue2);
     font-family: 'Economica', sans-serif;
     padding: 10px;
 }
@@ -67,12 +76,12 @@ p {
     line-height: 30px;
 
 }
-a:link {color: #FFD788;}
-a:visited {color:rgb(128,86,54)}
-a:hover {color:#D1E6FA;}
+a:link {color: var(--tan);}
+a:visited {color:var(--brown);}
+a:hover {color:var(--light-blue);}
 /* Blog specific rules */
 h2#theory {
-    color: #5B6888;
+    color: var(--blue);
 }
 
 ul.overview {
@@ -86,9 +95,9 @@ ol.structure {
     font-family: 'Dosis', sans-serif;
 
 }
-ul.overview:hover {color: rgb(209,230,250);}
+ul.overview:hover {color: var(--light-blue);}
 .theorydef, .quote {
-    border: solid 4px #D1E6FA;
+    border: solid 4px var(--light-blue);
 border-radius: 11px;
 padding: 10px;
 margin: 10px;
@@ -104,12 +113,32 @@ main dl dt {
 main dl dd {
     padding: 0 0 .75rem 1rem;
 }
+/*Styling Images */
+.photo {
+    margin: 0 0 0 2%;
+    padding: .05em;
+    float: right;
+    border: 2px solid var(--blue);
+    width: 10%;
+}
+figure.photo img {
+    width: 100%;
+  
+}
+figure.galleryImages {
+    float: left;
+}
+figure figcaption {
+    font-family: 'Dosis', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
 
 footer {
     
-    border: solid 1px #D1E6FA;
+    border: solid 1px var(--light-blue);
     border-radius: 11px;
-    background-color: #A5B6D1;
+    background-color: var(--light-blue2);
     text-align: center;
 
 }
