@@ -123,15 +123,20 @@ main dl dd {
 }
 figure.photo img {
     width: 100%;
+    text-align: center;
+    
   
 }
 figure.galleryImages {
     float: left;
+    padding: .5em;
+    border: 2px solid var(--blue);
 }
 figure figcaption {
     font-family: 'Dosis', sans-serif;
-    font-size: 1rem;
+    font-size: .7rem;
     text-align: center;
+   
 }
 
 footer {
