@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Economica&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+<title>Learning Resources: Explore our resources for learning a new instrument!</title>
+</head>
+
+<body>
+<!-- Start of the header -->
+<header>
+       <h1>Six Strings Music</h1>
+    <h2 id="top">Music tips and teaching resources</h2>
+    
+</header> 
+    
+<!-- Start of the navigation -->
+<nav>
+    <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li id="blog"><a href="blog.html">Blog</a></li>
+        <li id="about"><a href="about.html">About Us</a></li>
+        <li id="learningResources" class="active"><a href="learningResources.html">Learning Resources</a></li>
+    </ul>
+    <div class="stopcollapse"></div>
+</nav>
+    
+<!-- Start of the main content -->
+<main>
+    <h1>Learning Resources</h1>
+  
+    <h2>Fill out the form below for personalized advice! </h2>
+    <form action="thanks.html" method="post" enctype="multipart/form-data" name="advice" class="formForAdvice">
+    <fieldset>
+        <legend>Contact Info</legend>
+       <label><span>Name:</span> <input type="text" name="name" placeholder="Name" required></label>
+       <label><span>Address:</span> <input type="text" name="address" placeholder="1111 n test street" required></label>
+       <label><span>Email:</span> <input type="email" name="email" placeholder="email@test.com"></label>
+       <label><span>Phone:</span> <input type="tel" name="phone" placeholder="123-456-7899" required pattern="[0-9-. ]{10, 14}"></label>
+    </fieldset>
+    <fieldset>
+            <legend>Background Experience</legend>
+           <label><span>Years of Experience:</span> <input type="number" name="years" placeholder="0" required></label>
+           <label><span>New Instrument:</span> <input type="text" name="instrument" placeholder="piano" required></label>
+        </fieldset>
+
+
+
+    </form>
+    
+<!-- Start of the footer -->
+<footer>
+    <p>&copy; 2019 &bull; Six Strings Music &bull; Created by Lucy Pratt &bull; 09/05/19</p>
+    
+</footer>
+</body>
+</html>
