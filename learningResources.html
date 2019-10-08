@@ -35,21 +35,46 @@
     <form action="thanks.html" method="post" enctype="multipart/form-data" name="advice" class="formForAdvice">
     <fieldset>
         <legend>Contact Info</legend>
-       <label><span>Name:</span> <input type="text" name="name" placeholder="Name" required></label>
-       <label><span>Address:</span> <input type="text" name="address" placeholder="1111 n test street" required></label>
-       <label><span>Email:</span> <input type="email" name="email" placeholder="email@test.com"></label>
-       <label><span>Phone:</span> <input type="tel" name="phone" placeholder="123-456-7899" required pattern="[0-9-. ]{10, 14}"></label>
+       <label><span>Name:</span> <input type="text" name="name" placeholder="Name" required class="userInfo"></label>
+       <label><span>Address:</span> <input type="text" name="address" placeholder="1111 n test street" required class="userInfo"></label>
+       <label><span>Email:</span> <input type="email" name="email" placeholder="email@test.com" class="userInfo"></label>
+       <label><span>Phone:</span> <input type="tel" name="phone" placeholder="123-456-7899" required pattern="[0-9-. ]{10, 14}" class="userInfo"></label>
     </fieldset>
     <fieldset>
             <legend>Background Experience</legend>
-           <label><span>Years of Experience:</span> <input type="number" name="years" placeholder="0" required></label>
-           <label><span>New Instrument:</span> <input type="text" name="instrument" placeholder="piano" required></label>
+           <label><span>Years of Experience:</span> <input type="number" name="years" placeholder="0" required class="userInfo"></label>
+           <label><span>New Instrument:</span> <input type="text" name="instrument" placeholder="piano" required class="userInfo"></label>
         </fieldset>
+        <fieldset>
+            <legend>Preferences</legend>
+            <span>Which is your preferred learning style?</span>
+            <label><input type="radio" name="lm" value="visual">Visual</label><br>
+            <label><input type="radio" name="lm" value="kinesthetic">Kinesthetic</label><br>
+            <label><input type="radio" name="lm" value="auditory">Auditory</label><br>
+            
+            <span>Which learning resources would interest you?</span>
+            <label><input type="checkbox" name="worksheet" value="worksheet">Worksheet</label><br>
+            <label><input type="checkbox" name="book" value="book">Book</label><br>
+            <label><input type="checkbox" name="video" value="video">Video</label><br>
+
+        </fieldset>
+        <fieldset>
+            <legend>We Offer Consultations!</legend>
+            <label><span>Preffered Date:</span> <input type="date" name="date" class="userInfo"></label>
+            <label><span>Credit Card Type:</span>
+                <select name="creditcard" class="userInfo">
+                    <option value="MC">Mastercard</option>
+                    <option value="V">Visa</option>
+                    <option value="D">Discovery</option>
+                </select>
+            </label>
+        </fieldset>
+        <input type="submit" name="submit" value="Send Me Resources" class="button">
 
 
 
     </form>
-    
+    </main>
 <!-- Start of the footer -->
 <footer>
     <p>&copy; 2019 &bull; Six Strings Music &bull; Created by Lucy Pratt &bull; 09/05/19</p>
