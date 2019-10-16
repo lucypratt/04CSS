@@ -171,6 +171,11 @@ form.formForAdvice .button {
     font-size: 1rem;
 
 }
+form.formForAdvice textarea {
+    color: #5B6888;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1rem;
+}
 
 
 footer {
