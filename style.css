@@ -36,8 +36,44 @@ header h1 {
 }
 
 /* Style Rules */
+/* Phone Nav Media Query*/
+@media only screen and (max-width: 600px) {
+    nav {
+        background-color: #A5B6D1;
+        padding: .5rem 2%;
+        font-family: 'Dosis', sans-serif;
+        color: #5B6888;
 
-/* Navigation */
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    nav ul li a {
+        padding: .2rem 1rem;
+        margin-bottom: .5rem;
+        background: linear-gradient(to bottom, rgb(255, 215, 184) 0%, white 100%);
+        font-weight: 600;
+        text-decoration: none;
+        display: block;
+        border: solid 1px #5B6888;
+        border-radius: .4rem;
+    }
+    ul.nav li.active a {
+        background: rgb(209, 230, 250);
+        color: #5B6888;
+    }
+    ul.nav li a:hover{
+        background: rgb(209, 230, 250);
+        color:#5B6888;
+    }
+    .stopcollapse {
+        clear: both;
+    }
+
+}/*End phone Query*/
+/*Desktop Nav Media Query*/
+@media only screen and (min-width: 601px) {
 nav {
     background-color: rgb(255, 215, 184);
     background: linear-gradient(to bottom, rgb(255, 215, 184) 0%, white 100%);
@@ -65,7 +101,8 @@ ul.nav li a:hover{
 .stopcollapse {
     clear: both;
 }
-/*End Nav Styling*/
+
+}/*End Desktop Query*/
 main {
     padding: .5rem 2%;
 }
@@ -74,6 +111,7 @@ h1, h3 {
     font-family: 'Economica', sans-serif;
     font-style: normal;
     padding: 5px;
+    text-shadow: 0 0 2px #777; 
 
 }
 #mainblog {
@@ -141,6 +179,7 @@ main dl dd {
 figure.photo img {
     width: 100%;
     text-align: center;
+    box-shadow: 0 0 10px #777; 
     
   
 }
