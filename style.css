@@ -168,6 +168,48 @@ main dl dt {
 main dl dd {
     padding: 0 0 .75rem 1rem;
 }
+/*Map Styling*/
+iframe.map {
+    border: 2px solid #5B6888;
+    width: 90%;
+    margin-left: 5%;
+    height: 500px;
+}
+
+/*Table Styling*/
+.programTable {
+    border-collapse: collapse;
+    font-size: .9rem;
+    border: 2px solid #5B6888;
+    margin:0 1% 1rem 1%;
+    font-family: 'Dosis', sans-serif;
+    width:100%;
+}
+.programTable th {
+    text-align: left;
+    background-color: #5B6888;
+    color: white;
+    font-size: 1.1rem;
+    padding: .1rem .5rem;
+}
+.programTable td {
+    padding: .5rem;
+}
+.programTable tr:nth-child(odd) {
+    background-color: #5B6888;
+}
+.programTable tr:hover {
+background-color: rgb(209, 230, 250);
+color: #5B6888;
+}
+/* Video */
+.whyVideo {
+    width: 98%;
+    margin-left: 1%;
+    height: 320px;
+    margin-bottom: 1.1rem;
+}
+
 /*Styling Images */
 .photo {
     margin: 0 0 0 2%;
