@@ -195,8 +195,9 @@ iframe.map {
 .programTable td {
     padding: .5rem;
 }
-.programTable tr:nth-child(odd) {
+.programTable tr:nth-child(even) {
     background-color: #5B6888;
+    color: white;
 }
 .programTable tr:hover {
 background-color: rgb(209, 230, 250);
